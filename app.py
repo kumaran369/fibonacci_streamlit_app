@@ -113,7 +113,7 @@ def format_email_table(signals)
 # Send email
 def send_email()
     yag = yagmail.SMTP(EMAIL_USER, EMAIL_PASS)
-    subject = f📈 Fibonacci Signals – {datetime.now().strftime('%d %b %Y')}
+    subject = f"📈 Fibonacci Signals – {datetime.now().strftime('%d %b %Y')}"
     body = h2🔵 Buy Signalsh2 + format_email_table(buy_signals)
     body += h2🔴 Short Signalsh2 + format_email_table(sell_signals)
     yag.send(TO_EMAIL, subject, body)
