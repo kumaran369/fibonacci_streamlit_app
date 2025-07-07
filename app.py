@@ -5,7 +5,7 @@ import yagmail
 
 # ------------- CONFIGURATION -------------
 MIN_VOLUME = 50000
-TIMEFRAME = 15m
+TIMEFRAME = "15m"
 LOOKBACK_DAYS = 3
 EMAIL_USER = your_email@gmail.com
 EMAIL_PASS = your_app_password
