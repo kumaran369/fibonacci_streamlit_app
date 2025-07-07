@@ -126,7 +126,7 @@ def main():
         df.to_csv(filename, index=False)
         print("✅ Signals saved to:", filename)
 
-        subject = f"📈 Fibonacci Signals – {datetime.now().strftime('%d %b %Y')}"
+        subject = f"📈 Fibonacci Signals TWO – {datetime.now().strftime('%d %b %Y')}"
         body = f"{len(final_signals)} signals found.\n\n" + df.to_string(index=False)
         send_email(subject, body, filename)
     else:
